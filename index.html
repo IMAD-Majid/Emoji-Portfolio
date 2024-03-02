@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imad Majid, Full-stack Developer</title>
-    <link rel="stylesheet" type="text/css" href="style.css" >
-  </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-  <body>
+<body>
     <header>
         <h1>Imad Majid</h1>
         <nav class="menu">
@@ -24,52 +25,52 @@
         <h1>IMAD MAJID</h1>
         <p>Full-stack Developer</p>
         <p>I'm currently a lead developer at
-<a href="https://github.com/hans-labs">
-Han's Labs
-</a>
+            <a href="https://github.com/hans-labs">
+                Han's Labs
+            </a>
         </p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-slider">
-<div class="project">
-<img>
-<span class="title">Title</span>
-<span class="one-line-desc">Single line description</span>
-<ul>
-    <li>JQuery</li>
-    <li>C++</li>
-    <li>Figma</li>
-    <li>Python</li>
-</ul>
-</div>
+        <div id="project-slider">
+            <div class="project" style="background-image: url('https://i.giphy.com/2NJkigfPiu2dmpZg99.webp');">
+
+                <span class="title">Title</span>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Figma</li>
+                    <li>Python</li>
+                </ul>
+                <span class="one-line-desc">Single line description</span>
+            </div>
 
 
-<div class="project">
-<img>
-<span class="title">Title</span>
-<span class="one-line-desc">Single line description</span>
-<ul>
-    <li>JQuery</li>
-    <li>C++</li>
-    <li>Figma</li>
-    <li>Python</li>
-</ul>
-</div>
+            <div class="project" style="background-image: url('https://i.giphy.com/UXAflRaNRM3R5iY4jQ.webp');">
+
+                <span class="title">Title</span>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Figma</li>
+                    <li>Python</li>
+                </ul>
+                <span class="one-line-desc">Single line description</span>
+            </div>
 
 
-<div class="project">
-<img>
-<span class="title">Title</span>
-<span class="one-line-desc">Single line description</span>
-<ul>
-    <li>JQuery</li>
-    <li>C++</li>
-    <li>Figma</li>
-    <li>Python</li>
-</ul>
-</div>
+            <div class="project" style="background-image: url('https://i.giphy.com/rcLvBCW7cMzYeE1CEQ.webp');">
+
+                <span class="title">Title</span>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Figma</li>
+                    <li>Python</li>
+                </ul>
+                <span class="one-line-desc">Single line description</span>
+            </div>
         </div>
     </section>
 
@@ -80,9 +81,9 @@ Han's Labs
     <section id="contact">
         <h2>Contact</h2>
         <p>Email me at
-<a href="mailto:imadmajid2@gmail.com">
-imadmajid2@gmail.com
-</a>
+            <a href="mailto:imadmajid2@gmail.com">
+                imadmajid2@gmail.com
+            </a>
         </p>
     </section>
 
@@ -97,6 +98,17 @@ imadmajid2@gmail.com
             const href = event.target.href;
             document.querySelector(href.substr(href.indexOf('#'), href.length)).scrollIntoView({ behavior: 'smooth' });
         }
+        const techLogo = {
+            "Python": "python.PNG",
+            "Java": "java.PNG",
+            "C++": "cpp.PNG",
+            "Figma": "figma.PNG"
+        }
+        document.querySelectorAll(".project li").forEach(li => {
+            const text = li.textContent;
+            li.innerHTML = `<img src="technology logo/${techLogo[text]}">`
+        })
     </script>
 </body>
+
 </html>
