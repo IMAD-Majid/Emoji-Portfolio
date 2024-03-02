@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+}
+
+header {
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    box-sizing: border-box;
+}
+header h1 {
+    padding-left: 2em;
+}
+nav {
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    padding: 2em 1em;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#landing {
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+#projects {
+    background-color: #e8e8e8; /* Slightly darker gray background */
+}
+
+#workflow {
+    background-color: #dcdcdc; /* Even darker gray background */
+}
+
+#contact {
+    background-color: #cccccc; /* Darkest gray background */
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll-y;
+}
+.project {
+    min-width: 100vw;
+}
+.title {
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+.one-line-desc {
+    position: relative;
+    bottom: 4em;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+.project ul {
+    position: relative;
+    top: 4em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll-y;
+}
+.project ul li {
+    min-width: fit-content;
+    margin: 0.5em;
+}
+
+h1, h2 {
+    color: #333; /* Dark text color */
+}
+
+/* Add more styles as needed */
+
+/* Change header background and text color on scroll */
+body.scrolled header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+footer {
+    text-align: center;
+}

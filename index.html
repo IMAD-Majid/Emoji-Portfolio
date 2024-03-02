@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imad Majid, Full-stack Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+  </head>
+
+  <body>
+    <header>
+        <h1>Imad Majid</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="landing">
+        <h1>IMAD MAJID</h1>
+        <p>Full-stack Developer</p>
+        <p>I'm currently a lead developer at
+<a href="https://github.com/hans-labs">
+Han's Labs
+</a>
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-slider">
+<div class="project">
+<img>
+<span class="title">Title</span>
+<span class="one-line-desc">Single line description</span>
+<ul>
+    <li>JQuery</li>
+    <li>C++</li>
+    <li>Figma</li>
+    <li>Python</li>
+</ul>
+</div>
+
+
+<div class="project">
+<img>
+<span class="title">Title</span>
+<span class="one-line-desc">Single line description</span>
+<ul>
+    <li>JQuery</li>
+    <li>C++</li>
+    <li>Figma</li>
+    <li>Python</li>
+</ul>
+</div>
+
+
+<div class="project">
+<img>
+<span class="title">Title</span>
+<span class="one-line-desc">Single line description</span>
+<ul>
+    <li>JQuery</li>
+    <li>C++</li>
+    <li>Figma</li>
+    <li>Python</li>
+</ul>
+</div>
+        </div>
+    </section>
+
+    <section id="workflow">
+        <h2>Workflow</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at
+<a href="mailto:imadmajid2@gmail.com">
+imadmajid2@gmail.com
+</a>
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2024
+    </footer>
+    <script>
+        document.querySelector("nav.menu").onclick = (event) => {
+            // prevent default behavior, which is a not smooth scrolling
+            event.preventDefault();
+            if (event.target.tagName != 'A') return
+            const href = event.target.href;
+            document.querySelector(href.substr(href.indexOf('#'), href.length)).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
