@@ -1,1 +1,1 @@
-Deployed at [fd-portfolio](https://imad-majid.github.io/FD-Portfolio/)
+Deployed at [emoji-portfolio](https://imad-majid.github.io/emoji-Portfolio/)
